@@ -12,7 +12,13 @@ config = {
     'packages': ['datepal'],
     'scripts': [],
     'name': 'datepal',
-    'test_suite': 'tests'
+    'test_suite': 'tests',
+    'classifiers': [
+        'Operating System :: OS Independent',
+        'Programming Language :: Python :: 2',
+        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3'
+    ]
 }
 
 setup(**config)
