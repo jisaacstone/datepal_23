@@ -14,7 +14,7 @@ if $haspy2 || $haspy3 ; then
   fi
 else
   if `command -v python >/dev/null 2>&1` ; then
-    echo "Running tests with unknown python"
+    echo " [ Running tests with unknown python ]"
     python setup.py test || exit 4
   fi
 fi
