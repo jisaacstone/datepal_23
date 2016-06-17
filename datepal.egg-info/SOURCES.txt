@@ -1,8 +1,0 @@
-setup.py
-datepal/__init__.py
-datepal/__main__.py
-datepal/datepal.py
-datepal.egg-info/PKG-INFO
-datepal.egg-info/SOURCES.txt
-datepal.egg-info/dependency_links.txt
-datepal.egg-info/top_level.txt
