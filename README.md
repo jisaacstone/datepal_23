@@ -4,14 +4,14 @@ Find the nearest palindromic date to a given date
 
 command line:
 
-`$ python -m datepal 1776`
-`1771`
+		$ python -m datepal 1776
+		1771
 
 python:
 
-`>>> from datepal import datepal`
-`>>> datepal.nearest_palindrome(1776)`
-`1771`
+		>>> from datepal import datepal
+		>>> datepal.nearest_palindrome(1776)
+		1771
 
 
 ## Testing ##
