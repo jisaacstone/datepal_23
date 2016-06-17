@@ -1,0 +1,20 @@
+#! /bin/sh
+
+haspy2=`command -v python2 >/dev/null 2>&1`
+haspy3=`command -v python3 >/dev/null 2>&1`
+
+if $haspy2 || $haspy3 ; then
+  if $haspy2 ; then
+    echo " [ Running tests with python 2 ]"
+    python2 setup.py test || exit 2
+  fi
+  if $haspy3 ; then
+    echo " [ Running tests with python 3 ]"
+    python3 setup.py test || exit 3
+  fi
+else
+  if `command -v python >/dev/null 2>&1` ; then
+    echo "Running tests with unknown python"
+    python setup.py test || exit 4
+  fi
+fi
