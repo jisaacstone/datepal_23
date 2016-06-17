@@ -14,7 +14,7 @@ def nearest_palindrome(date):
 
     If two palindromes are eqidistant then one of the two will be chosen.
 
-    If a negative value is povided then `0` will be returned, as it is the
+    If a negative value is provided then `0` will be returned, as it is the
     nearest palandromic number to any negative value.
     """
 
@@ -29,7 +29,7 @@ def nearest_palindrome(date):
         return str(nearest_palindrome(int(date)))
 
     if isinstance(date, float):
-        # explicitly not supporint this - code handels it well enough
+        # explicitly not supporting this, the code handles it well enough
         raise TypeError("floating-point dates are not supported")
 
     if date < 0:
